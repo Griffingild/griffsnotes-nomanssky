@@ -13,9 +13,6 @@ export default ((opts?: Options) => {
     const links = opts?.links ?? []
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <p>
-          Griffingild © {year}
-        </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
@@ -23,6 +20,9 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
+        <p>
+          Griffingild © {year}
+        </p>
       </footer>
     )
   }
